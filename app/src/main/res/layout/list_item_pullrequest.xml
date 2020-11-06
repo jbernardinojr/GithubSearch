@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ci_user_avatar_pr"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:padding="4dp"
+        app:civ_border_width="1dp"
+        app:layout_constraintStart_toStartOf="@id/tv_desc_pr"
+        app:layout_constraintTop_toBottomOf="@id/tv_desc_pr" />
+
+    <TextView
+        android:id="@+id/tv_title_pr"
+        style="@style/Title_PR"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:padding="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Nome do Repositorio" />
+
+    <TextView
+        android:id="@+id/tv_desc_pr"
+        style="@style/descText_PR"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_title_pr"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_pr"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_pr"
+        tools:text="Descrição" />
+
+    <TextView
+
+        android:id="@+id/tv_user_name_pr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:gravity="start|center"
+        android:padding="2dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/tv_fullname_pr"
+        app:layout_constraintEnd_toEndOf="@+id/tv_desc_pr"
+        app:layout_constraintStart_toEndOf="@+id/ci_user_avatar_pr"
+        app:layout_constraintTop_toTopOf="@+id/ci_user_avatar_pr"
+        tools:text="Username" />
+
+    <TextView
+        android:id="@+id/tv_fullname_pr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:gravity="start|center"
+        android:padding="2dp"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ci_user_avatar_pr"
+        app:layout_constraintEnd_toEndOf="@+id/tv_user_name_pr"
+        app:layout_constraintStart_toStartOf="@+id/tv_user_name_pr"
+        app:layout_constraintTop_toBottomOf="@+id/tv_user_name_pr"
+        tools:text="Nome Sobrenome" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
